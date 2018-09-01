@@ -67,7 +67,7 @@ def updateDB(user, game, kif):
 		# あったので更新
 		gameId = record["id"]	
 		query = {'id':{ '$eq' : gameId}};
-		value = { '$set' : { 'csaExists' : True } };
+		value = { '$set' : { 'csaExists' : False } };
 		col.update(query, value)
 
 		updated = True
