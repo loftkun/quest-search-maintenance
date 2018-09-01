@@ -73,6 +73,7 @@ if __name__ == '__main__':
 	quest = sys.argv[1]
 	users = os.listdir(quest)
 	users.sort()
+	print("user num={}".format(len(users)))
 
 	cnt = 0
 	total = np.array(( 0, 0, 0 ))
